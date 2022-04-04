@@ -14,17 +14,18 @@ public:
 
         int num = 0;
         ListNode * t = head;
+        int c = k;
+        ListNode * h1 = head;
         while (t != nullptr) {
             t = t->next;
             num++;
-        }
-        ListNode * h1 = head;
-        int c = k;
-        while (c > 1) {
-            h1 = h1->next;
+            if (c > 1) {
+                h1 = h1->next;
                 c--;
+            } else {
+                
+            }
         }
-
         ListNode * h2 = head;
         c = 0;
         while( c < (num -k)) {
