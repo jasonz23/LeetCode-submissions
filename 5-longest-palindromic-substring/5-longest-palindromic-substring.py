@@ -5,6 +5,8 @@ class Solution:
             return s
         for i in range(len(s) - 1):
             j = len(s)
+            if j - i < len(st):
+                return st
             while j > i:
                 if s[i:j] == s[i:j][::-1] and (j-i > len(st)):
                     if len(s[i:j] ) > len(st):
